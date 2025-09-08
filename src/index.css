@@ -1,13 +1,77 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+height: 80vh;
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.devfrases{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #606c38;
+  box-shadow: 0 0 10px #0000007a;
+  border-radius: 10px;
+  margin: auto;
+  color: #fff;
+  width: 60vw;
+  padding: 1rem 0;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+.button{
+  border: none;
+  background-color: #283618;
+  color: #fff;
+  padding: 10px;
+  box-shadow: 0 0 7px #ffffffa4;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.buttonGerar{
+  border: none;
+  background-color: #bc6c25;
+  color: #fff;
+  padding: 10px;
+  box-shadow: 0 0 7px #ffffffa4;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.campotext{
+  background-color: #fff;
+  color: #bc6c25;
+  text-align: center;
+  width: 90%;
+  border-radius: 10px;
+}
+
+@media screen and (max-width:768px) {
+  .devfrases{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #606c38;
+  box-shadow: 0 0 10px #0000007a;
+  border-radius: 10px;
+  margin: auto;
+  color: #fff;
+  width: 90vw;
+  padding: 1rem 0;
+  height: 100%;
+}
 }
